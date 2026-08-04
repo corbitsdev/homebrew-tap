@@ -1,4 +1,4 @@
-class Corbits < Formula
+class CorbitsCode < Formula
   desc "Single-process coding agent CLI built on the Interchange runtime"
   homepage "https://github.com/corbitsdev/corbits-code"
   version "0.2.87"
