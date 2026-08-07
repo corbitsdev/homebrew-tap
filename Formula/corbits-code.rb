@@ -1,28 +1,28 @@
 class CorbitsCode < Formula
   desc "Single-process coding agent CLI built on the Interchange runtime"
   homepage "https://github.com/corbitsdev/corbits-code"
-  version "0.2.89"
+  version "0.2.90"
   license "GPL-2.0-only"
 
   on_macos do
     on_arm do
-      url "https://github.com/corbitsdev/corbits-code/releases/download/v0.2.89/corbits-0.2.89-macos-arm64.tar.gz"
-      sha256 "4297f80cb4241386e8416ebc9e9e7ab8fda595c1edace5697c19929887cf0d23"
+      url "https://github.com/corbitsdev/corbits-code/releases/download/v0.2.90/corbits-0.2.90-macos-arm64.tar.gz"
+      sha256 "94a744225a3e8fac0dc6138fc3911bf2aa29820d43f948d9ed227227d879b962"
     end
     on_intel do
-      url "https://github.com/corbitsdev/corbits-code/releases/download/v0.2.89/corbits-0.2.89-macos-x64.tar.gz"
-      sha256 "27f9112d98dc9ea3e67878b1e9d6d4fdbb18f24e039a01cd48000e446fe46b9d"
+      url "https://github.com/corbitsdev/corbits-code/releases/download/v0.2.90/corbits-0.2.90-macos-x64.tar.gz"
+      sha256 "f08a32b0fe7e8ba6d58164ed61cb3a1e4e7d831f9b821bce2265bcfa0b876ff6"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/corbitsdev/corbits-code/releases/download/v0.2.89/corbits-0.2.89-linux-arm64.tar.gz"
-      sha256 "17c54337d1b96e54bb21535670b333e64d5245c33791a66fba663590e1eac5d4"
+      url "https://github.com/corbitsdev/corbits-code/releases/download/v0.2.90/corbits-0.2.90-linux-arm64.tar.gz"
+      sha256 "a92e27361c92922e7e1c29ea30793a5fe34f893dfb2090fa2da1404a68e3e18c"
     end
     on_intel do
-      url "https://github.com/corbitsdev/corbits-code/releases/download/v0.2.89/corbits-0.2.89-linux-x64.tar.gz"
-      sha256 "b68d2a6d18f4bea4135da70de26962ea19df3c11ba05ce0398859b7db2613863"
+      url "https://github.com/corbitsdev/corbits-code/releases/download/v0.2.90/corbits-0.2.90-linux-x64.tar.gz"
+      sha256 "3d2c2dc55efa4a9819c042cc88dd515cfd98f8c11e5cc9efb8d3b332742bdacb"
     end
   end
 
