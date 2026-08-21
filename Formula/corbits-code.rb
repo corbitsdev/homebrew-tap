@@ -1,33 +1,37 @@
 class CorbitsCode < Formula
   desc "Single-process coding agent CLI built on the Interchange runtime"
   homepage "https://github.com/corbitsdev/corbits-code"
-  version "0.2.98"
+  version "0.2.99"
   license "GPL-2.0-only"
 
   on_macos do
     on_arm do
-      url "https://github.com/corbitsdev/corbits-code/releases/download/v0.2.98/corbits-0.2.98-macos-arm64.tar.gz"
-      sha256 "46109d7dbcde6179bc4f9bfca2514665a264272e290ad518c0a7e0a1c82719bf"
+      url "https://github.com/corbitsdev/corbits-code/releases/download/v0.2.99/corbits-0.2.99-macos-arm64.tar.gz"
+      sha256 "7604cd07ac32d3cade426e53e5581db68340ca2ae0f6749658c47e578a37e3c4"
     end
     on_intel do
-      url "https://github.com/corbitsdev/corbits-code/releases/download/v0.2.98/corbits-0.2.98-macos-x64.tar.gz"
-      sha256 "6f1fd822540b2676e7d277d3a1eb30b05a45e938d0d4519d8057892b007ffac9"
+      url "https://github.com/corbitsdev/corbits-code/releases/download/v0.2.99/corbits-0.2.99-macos-x64.tar.gz"
+      sha256 "7d0e4c9ff7bba84e14712ecda429cf5883dfbcd4efae512d3dacfce1f711df0c"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/corbitsdev/corbits-code/releases/download/v0.2.98/corbits-0.2.98-linux-arm64.tar.gz"
-      sha256 "e7da674a1c2bcae79812ea2ae51c7af5c1bc0c2d3db7d0b8d621c29445436b72"
+      url "https://github.com/corbitsdev/corbits-code/releases/download/v0.2.99/corbits-0.2.99-linux-arm64.tar.gz"
+      sha256 "9acc2f2ddf46c395b7bb7be91db3455cdecd936f860affe0b939a43d02913456"
     end
     on_intel do
-      url "https://github.com/corbitsdev/corbits-code/releases/download/v0.2.98/corbits-0.2.98-linux-x64.tar.gz"
-      sha256 "442f0d67238f2c2919d1c5b526de863a6f6765cdd931fbeb8e88514749413352"
+      url "https://github.com/corbitsdev/corbits-code/releases/download/v0.2.99/corbits-0.2.99-linux-x64.tar.gz"
+      sha256 "d61f7649eee7497aa72d290fcfbfd9b2189216f370219c7b08eb61f85395a21c"
     end
   end
 
   def install
     bin.install "corbits"
+    if File.directory?("plugins")
+      (bin/"plugins").mkpath
+      cp_r "plugins/.", bin/"plugins"
+    end
   end
 
   test do
